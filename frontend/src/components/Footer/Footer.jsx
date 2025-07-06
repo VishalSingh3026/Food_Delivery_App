@@ -32,8 +32,8 @@ const Footer = () => {
                 <div className="flex flex-col gap-4">
                     <h2 className='text-lg font-medium capitalize'>Get in touch</h2>
                     <div className='text-base flex flex-col gap-2'>
-                        <a href="tel:+917654897359">+91 7654897359</a>
-                        <a href="mailto:contact@fooddelivery.com">contact@fooddelivery.com</a>
+                        <a href="tel:+917654897359">+91 941261****</a>
+                        <a href="mailto:contact@fooddelivery.com">vishalsingh****@gmail.com</a>
                     </div>
                 </div>
             </div>
