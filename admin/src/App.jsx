@@ -10,10 +10,11 @@ import Category from './pages/Category/Category';
 import Navbar from './components/Navbar/Navbar';
 import PromoCode from './pages/PromoCode/PromoCode';
 import Contacts from './pages/Contact/Contact';
+import config from './config/env.js';
 
 const App = () => {
 
-    const url = process.env.VITE_API_URL;
+    const url = config.API_URL;
     const [showLogin, setShowLogin] = useState(false);
     const { darkMode } = useContext(ThemeContext);
 

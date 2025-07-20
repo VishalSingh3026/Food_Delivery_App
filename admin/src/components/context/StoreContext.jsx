@@ -1,11 +1,12 @@
 import { createContext, useEffect, useState } from "react";
 import axios from 'axios'
+import config from '../../config/env.js'
 
 export const StoreContext = createContext(null)
 
 const StoreContextProvider = (props) => {
 
-    const url = process.env.VITE_API_URL;
+    const url = config.API_URL;
     const [token, setToken] = useState("");
     const [food_list, setFoodList] = useState([]);
 

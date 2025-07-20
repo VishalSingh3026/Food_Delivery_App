@@ -4,6 +4,7 @@ import order_icon from './order_icon.png'
 import profile_image from './profile_image.png'
 import upload_area from './upload_area.png'
 import parcel_icon from './parcel_icon.png'
+import config from '../config/env.js'
 
 export const assets ={
     logo,
@@ -14,4 +15,4 @@ export const assets ={
     parcel_icon
 }
 
-export const url = process.env.VITE_API_URL;
+export const url = config.API_URL;
