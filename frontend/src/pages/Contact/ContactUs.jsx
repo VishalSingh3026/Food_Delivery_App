@@ -28,7 +28,7 @@ const ContactUs = () => {
         resolver: zodResolver(contactSchema),
     });
 
-    const url = 'http://localhost:4000';
+    const url = process.env.VITE_API_URL;
 
     const onSubmit = async (data) => {
         console.log(data);

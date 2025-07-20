@@ -5,7 +5,7 @@ export const StoreContext = createContext(null)
 
 const StoreContextProvider = (props) => {
 
-    const url = "http://localhost:4000";
+    const url = process.env.VITE_API_URL;
     const [token, setToken] = useState("");
     const [userData, setUserData] = useState('');
     const [cartItems, setCartItems] = useState({});

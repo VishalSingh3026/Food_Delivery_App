@@ -11,7 +11,7 @@ const Menu = () => {
     const [searchQuery, setSearchQuery] = useState('');
     const { food_list } = useContext(StoreContext);
 
-    const url = 'http://localhost:4000';
+    const url = process.env.VITE_API_URL;
     const [categories, setCategories] = useState([]);
 
     const fetchAllCategories = async () => {

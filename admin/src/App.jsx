@@ -13,7 +13,7 @@ import Contacts from './pages/Contact/Contact';
 
 const App = () => {
 
-    const url = 'http://localhost:4000';
+    const url = process.env.VITE_API_URL;
     const [showLogin, setShowLogin] = useState(false);
     const { darkMode } = useContext(ThemeContext);
 

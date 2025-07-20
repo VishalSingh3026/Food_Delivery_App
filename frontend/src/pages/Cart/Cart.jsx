@@ -21,7 +21,7 @@ const Cart = () => {
         setDiscountedAmount,
     } = useContext(StoreContext);
 
-    const url = 'http://localhost:4000';
+    const url = process.env.VITE_API_URL;
     const navigate = useNavigate();
     const [promoCodes, setPromoCodes] = useState([]);
     const [appliedPromoCode, setAppliedPromoCode] = useState(null);

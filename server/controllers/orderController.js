@@ -10,7 +10,7 @@ exports.placeOrder = async (req, res) => {
 
     try {
         const { userId, items, amount, address } = req.body;
-        const frontend_url = 'http://localhost:5173';
+        const frontend_url = process.env.VITE_FRONTEND_URL || 'http://localhost:5173';
 
         const newOrder = new Order({
             userId: userId,
