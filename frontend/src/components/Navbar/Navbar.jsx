@@ -36,7 +36,7 @@ const Navbar = ({ setShowLogin }) => {
         <div className='shadow-md dark:bg-gray-800 py-2'>
             <div className='w-11/12 mx-auto flex gap-4 justify-between items-center py-3 text-gray-800 dark:text-gray-200 bg'>
                 <Link to='/' className='text-3xl font-bold'>
-                    DineDash
+                    Food Panda
                 </Link>
                 <div className="flex items-center gap-6 text-lg font-medium">
                     <Link to='/' className={matchRoute('home') ? 'border-b-2 border-orange-600 dark:border-gray-300 rounded-sm' : ''}>
